@@ -2,8 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 from django.shortcuts import render
 from requests.compat import quote_plus
+from urllib2 import Request, urlopen
 from . import models
 
+request = Request('https://useragentidentifier.expeditedaddons.com/?0RUH0E8IL1JZP1BS6345X2FYMV69DGANQK57WC872TO493=' + os.environ['USERAGENTIDENTIFIER_0RUH0E8IL1JZP1BS6345X2FYMV69DGANQK57WC872TO493'] + '&user_agent=Mozilla')
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
 
 BASE_FLIPKART_URL = 'https://www.flipkart.com/search?q={}'
@@ -17,7 +19,7 @@ def new_search(request):
 	final_url = BASE_FLIPKART_URL.format(quote_plus(search))
 	final_urltwo = BASE_AMAZON_URL.format(quote_plus(search))
 	response = requests.get(final_url)
-	responsetwo = requests.get(final_urltwo, headers=headers)
+	responsetwo = request.get(final_urltwo, headers=headers)
 	data = response.text
 	datatwo = responsetwo.text
 	soup = BeautifulSoup(data, features='html.parser')
