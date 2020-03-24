@@ -1,0 +1,64 @@
+{% load staticfiles %}
+{% load static %}
+
+<html lang="en">
+<head>
+	<title>ShopIt - This tool compare products and prices from Amazon and flipkart</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body style="background-color: #4387f6; font-family: 'gilroy-light';">
+
+<!-- Navbar --> 
+    <nav style="background-color: transparent;">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo" style="font-family: 'gilroy-extrabold';">Shopit</a>
+        </div>
+    </nav>
+
+<!-- Form --> 
+    <div class="container">
+        <form action="{% url 'new_search' %}" method="post" style="line-height: 400px;">
+            {% csrf_token %}
+            <div style="text-align:center;">
+                <input type="text" name="search" placeholder="What are you looking for?" style="color: #fff; width: 50%;">
+                <button type="submit"><i class="material-icons" style="color: white;">search</i></button>
+            </div>
+        </form>
+    </div>
+
+<!-- Info Chips --> 
+    <div style="text-align: center;">    
+        <div class="chip animated fadeInUp delay-2s" style="background-color: rgba(0, 0, 0, 0.5);">
+            <i class="material-icons dp48" style="color: white; margin-top: 5px;">info</i>
+            <a onclick="M.toast({html: 'This tool compare products and prices from Amazon and flipkart, its made on Python with Django as framework and Materialize is used to do the styling. This web-app is created by Ahmed Reza.', classes: 'rounded', displayLength: '1500'})">About</a>
+        </div>
+
+        <div class="chip animated fadeInUp delay-3s" style="background-color: rgba(0, 0, 0, 0.5);">
+            <i class="material-icons dp48" style="color: #EE6E73; margin-top: 5px;">flash_on</i>
+            <a onclick="M.toast({html: 'Its super fast, you are searching two ecommerce at once in the fastest way possible.', classes: 'rounded', displayLength: '1500'})">Fast</a>
+        </div>
+
+        <div class="chip animated fadeInUp delay-4s" style="background-color: rgba(0, 0, 0, 0.5);">
+            <i class="material-icons dp48" style="color: orange; margin-top: 5px;">camera</i>
+            <a onclick="M.toast({html: 'Minimalistic beautiful GUI, focused on the user.', classes: 'rounded', displayLength: '1500'})">Design</a>
+        </div>
+
+        <div class="chip animated fadeInUp delay-5s" style="background-color: rgba(0, 0, 0, 0.5);">
+            <i class="material-icons dp48" style="color: blue; margin-top: 5px;">chrome_reader_mode</i>
+            <a onclick="M.toast({html: 'Showing best of everything, Puthon, Django, CSS, JS', classes: 'rounded', displayLength: '1500'})">Work</a>
+        </div>
+    </div>
+
+{% block content %}
+{% endblock content %}
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <h2 style="text-align: center">{{ search | title }}</h2>
+    <div class="row">
+<!-- This Column shows results from Flipkart --> 
+        <div class="column">
+            <h4 style="text-align: center;"><strong>Flipkart</strong></h4>
+            {% for post in final_postings %}
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="{{ post.1 }}"><img src="{{ post.3 }}" style="height: 250px;" alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>{{ post.0 }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{ post.1 }}">View listing<br> Price: {{ post.2 }}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- This Column shows results from Amazon --> 
+        <div class="column">
+            <h4 style="text-align: center;"><strong>Amazon</strong></h4>
+            {% for post in final_postingstwo %}
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="{{ post.1 }}"><img src="{{ post.3 }}" style="height: 250px;" alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>{{ post.0 }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{ post.1 }}">View listing<br> Price: {{ post.2 }}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

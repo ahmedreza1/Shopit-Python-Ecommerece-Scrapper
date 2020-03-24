@@ -1,0 +1,39 @@
+[INFO  - 2020-03-23T15:43:41.864Z] GhostDriver - Main - running on port 53143
+[INFO  - 2020-03-23T15:43:44.675Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-03-23T15:43:44.675Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - page.customHeaders:  - {}
+[INFO  - 2020-03-23T15:43:44.675Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-03-23T15:43:44.675Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 14148630-6d1d-11ea-88a0-0d4856b55408
+[ERROR - 2020-03-23T15:44:01.860Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.omniture.tpv')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-23T15:44:01.862Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - page.onError - stack:
+  (anonymous function) (https://img1a.flixcart.com/www/linchpin/batman-returns/omni/omni16.js:96)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-23T15:44:16.368Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - page.onError - msg: ReferenceError: Can't find variable: Set
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-23T15:44:16.368Z] Session [14148630-6d1d-11ea-88a0-0d4856b55408] - page.onError - stack:
+  (anonymous function) (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/vendor.chunk.4a8f1ef7.js:33)
+  d (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/runtime.79db9714.js:1)
+  (anonymous function) (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/vendor.chunk.4a8f1ef7.js:12)
+  d (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/runtime.79db9714.js:1)
+  (anonymous function) (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/app.chunk.6f881541.js:22)
+  d (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/runtime.79db9714.js:1)
+  (anonymous function) (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/app.chunk.6f881541.js:22)
+  d (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/runtime.79db9714.js:1)
+  r (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/runtime.79db9714.js:1)
+  a (https://img1a.flixcart.com/www/linchpin/fk-cp-zion/js/runtime.79db9714.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-23T15:44:16.606Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1584978256580
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-23T15:44:17.986Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1584978257975
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-23T15:44:19.491Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1584978259483
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2020-03-23T15:48:42.343Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-03-23T15:53:42.344Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
