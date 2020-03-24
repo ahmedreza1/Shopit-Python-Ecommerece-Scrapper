@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from django.shortcuts import render
 from requests.compat import quote_plus
-from urllib2 import Request, urlopen
+from urllib import Request, urlopen
 from . import models
 
 request = Request('https://useragentidentifier.expeditedaddons.com/?0RUH0E8IL1JZP1BS6345X2FYMV69DGANQK57WC872TO493=' + os.environ['USERAGENTIDENTIFIER_0RUH0E8IL1JZP1BS6345X2FYMV69DGANQK57WC872TO493'] + '&user_agent=Mozilla')
