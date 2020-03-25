@@ -82,3 +82,4 @@ def new_search(request):
 	'final_postingstwo': final_postingstwo
 	}
 	return render(request, 'myapp/new_search.html', stuff_for_frontend)
+	
